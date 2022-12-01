@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MIDII</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">MIDII</p>
+            <nav>
+                <a href="#que-midi">Que es MIDI</a>
+                <a href="#developing">Desarrollo</a>
+                <a href="#repositorio">Repositorio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section id="hero">
+        <h1>Controlador MIDI</h1>
+        <button><a href="#que-midi"> Toca para desplazarte!</a></button>
+    </section>
+
+<!-- QUE ES MIDI -->
+
+    <section id="que-midi">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">MIDII</span></h2>
+                <p>Un controlador MIDI es un dispositivo que posee una Interface Digital de Instrumento Musical, la cual es capaz de comunicarse con otros dispositivos.
+                    <br>
+                    <br>
+                    El MIDI puede enviar informacion sobre la nota de ese instrumento, o la duracion de la misma, para que pueda ser reproducida por el software de audio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- DESARROLLO -->
+
+    <section id="developing">
+        <div class="container">
+            <h2 class="color-acento">Desarrollo</h2>
+            <p>Para realizar el proyecto de la forma mas eficaz posible, utilizamos la metodologia Scrum. Donde cada integrante del equipo de trabajo tenia un periodo determinado de tiempo
+                para llevar a cabo la tarea que se le habia asignado. Proyectamos 3 etapas fundamentales del proyecto, y las dividimos en tareas mas cortas que, en el orden correcto, nos
+                iban a llevar al resultado que queriamos alcanzar.
+            </p>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Investigación</h3>
+                    <br><br>
+                    <p>Investigamos como construir el contenedor o gabinete del hardware, que materiales eran los mas factibles, y cuales se adaptaban mejor a la idea del proyecto. 
+                        Tambien nos adentramos en el hardware a utilizar, que marca elegir, cual es el modelo que es compatible con la idea a desarrollar, y de que manera programarlo.
+                    </p>
+                    
+                </div>
+                <div class="carta">
+                    <h3>Diseño</h3>
+                    <br>
+                    <br>
+                    <p>La segunda etapa de nuestro proyecto, fue el diseño del mismo.
+                        Por la parte del software, teníamos que encontrar la forma de transmitir la señal de un botón pulsado, por medio de seriales, 
+                        al software de sonido preferido del usuario. 
+                        El código debia enviar la señal de forma correcta para que el software lo recibiera exitosamente
+                        </p>
+                    
+                </div>
+                <div class="carta">
+                    <h3>Ensamble</h3>
+                    <br>
+                    <br>
+                    <p>Las dos primeras semanas de esta fase, la dedicamos a imprimir en 3D de la caja, solucionar errores y dar con el diseño final.
+                        Seguido de tener el diseño final, montamos los botones y conectamos los mismos según el esquema que habíamos diseñado.</p>
+                    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- REPOSITORIO -->
+
+    <section id="repositorio">
+        <div class="container">
+            <ul>
+                <li>✔️ Esquema del circuito</li>
+                <li>✔️ Codigo listo para compilar</li>
+                <li>✔️ Software necesario</li>
+                <li>
+                    <br>
+                    <a href="https://github.com/pablovaccaro35/controlador-midi" target="_blank">
+                        <button>GitHub</button>
+                    </a>
+                </li>
+            </ul>
+        
+        </div>
+    </section>
+
+    <!-- LAUNCHPAD -->
+
+    <section id="final">
+        <div class="launchpad">
+            <div data-key="a" class="pad">A</div>
+            <div data-key="s" class="pad">S</div>
+            <div data-key="d" class="pad">D</div>
+            <div data-key="f" class="pad">F</div>
+            <div data-key="g" class="pad">G</div>
+            <div data-key="h" class="pad">H</div>
+            <div data-key="j" class="pad">J</div>
+            <div data-key="k" class="pad">K</div>
+            <div data-key="l" class="pad">L</div>
+        </div>
+    
+        <audio data-key="a" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/clap.wav"></audio>
+        <audio data-key="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/hihat.wav"></audio>
+        <audio data-key="d" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/kick.wav"></audio>
+        <audio data-key="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/openhat.wav"></audio>
+        <audio data-key="g" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/boom.wav"></audio>
+        <audio data-key="h" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/ride.wav"></audio>
+        <audio data-key="j" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/snare.wav"></audio>
+        <audio data-key="k" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tom.wav"></audio>
+        <audio data-key="l" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tink.wav"></audio>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Ing. E. Latzina 35 D.E. 18</p>
+        </div>
+    </footer>
+<script src="./logic.js"></script>
+</body>
+</html>
